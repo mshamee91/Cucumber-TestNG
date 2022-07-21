@@ -1,0 +1,5 @@
+stepdefinitions\AccountsSteps.class
+stepdefinitions\LoginSteps.class
+runner\MyTestRunner.class
+AppHooks\AppHooks.class
+runner\FailedRunner.class

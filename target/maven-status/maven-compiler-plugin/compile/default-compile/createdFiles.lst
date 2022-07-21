@@ -1,0 +1,6 @@
+com\qa\pages\LoginPage.class
+com\qa\factory\DriverFactory.class
+com\qa\util\ConfigReader.class
+com\qa\util\ExcelUtil.class
+com\qa\factory\DriverFactoryParallel.class
+com\qa\pages\AccountsPage.class

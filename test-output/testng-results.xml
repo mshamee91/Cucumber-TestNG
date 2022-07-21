@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="63684" started-at="2022-05-31T14:42:05Z" finished-at="2022-05-31T14:43:08Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@1cbbffcd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="63684" started-at="2022-05-31T14:42:05Z" finished-at="2022-05-31T14:43:08Z">
+      <class name="parallel.ParallelRun">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:parallel.ParallelRun@1cbbffcd]" name="setUpClass" is-config="true" duration-ms="1187" started-at="2022-05-31T14:42:05Z" finished-at="2022-05-31T14:42:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@1cbbffcd]" name="runScenario" duration-ms="45848" started-at="2022-05-31T14:42:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T14:42:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Accounts page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Accounts page validation]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@1cbbffcd]" name="runScenario" duration-ms="58111" started-at="2022-05-31T14:42:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T14:43:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct username and correct password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check Login page with different inputs]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.ParallelRun@1cbbffcd]" name="runScenario" duration-ms="39718" started-at="2022-05-31T14:42:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T14:42:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Accounts page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Accounts page validation]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[Login] - My Store> but was:<[My account] - My Store>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<[Login] - My Store> but was:<[My account] - My Store>
+at org.junit.Assert.assertEquals(Assert.java:117)
+at org.junit.Assert.assertEquals(Assert.java:146)
+at parallel.AccountsSteps.accounts_page_title_should_be_displayed_as(AccountsSteps.java:29)
+at ✽.Accounts page title should be displayed as "My account - My Store"(file:///C:/Shameer/Selenium/CucumberTestNG/src/test/resources/parallel/AccountsPage.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:parallel.ParallelRun@1cbbffcd]" name="tearDownClass" is-config="true" duration-ms="4349" started-at="2022-05-31T14:43:04Z" finished-at="2022-05-31T14:43:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- parallel.ParallelRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
